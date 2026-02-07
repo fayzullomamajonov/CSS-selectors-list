@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS style</title>
+    <link rel="stylesheet" href="./css/css_page.css" />
+    <link rel="icon" href="images/Learning_coin.png" />
+  </head>
+  <body>
+    <section>
+      <div>
+        <h1>CSS Style declarations</h1>
+        <div>
+          <ol>
+            <li>
+              <h3>
+                Matn bilan ishlash (Typography) Matnlarning ko‘rinishi, hajmi va
+                joylashuvini boshqarish uchun.
+              </h3>
+              <div>
+                <p>
+                  <strong>color: #333;</strong> - Matn rangini belgilash <br />
+                  <strong>font-size: 18px;</strong> - Matn o‘lchamini
+                  o‘zgartirish <br />
+                  <strong>font-weight: bold;</strong> - Matnning qalinligini
+                  belgilash (bold, normal, 500...) <br />
+                  <strong>font-family: Arial, sans-serif;</strong> - Matn
+                  shriftini (turini) belgilash <br />
+                  <strong>text-align: center;</strong> - Matnni gorizontal
+                  tekislash (left, center, right, justify) <br />
+                  <strong>text-decoration: underline;</strong> - Matnning
+                  chizig‘ini boshqarish (none, underline, line-through) <br />
+                  <strong>line-height: 1.5;</strong> - Qatorlar orasidagi
+                  masofani belgilash <br />
+                  <strong>letter-spacing: 2px;</strong> - Harflar orasidagi
+                  masofani o‘zgartirish <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Blok va Masofalar (Box Model) Elementlarning o‘lchami va
+                ularning atrofidagi bo‘shliqlarni boshqarish.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>width: 100px;</strong> - Elementning kengligini
+                  belgilash <br />
+
+                  <strong>height: 200px;</strong> - Elementning balandligini
+                  belgilash <br />
+
+                  <strong>padding: 20px;</strong> - Elementning ichki qismidagi
+                  bo‘shliq <br />
+
+                  <strong>margin: 15px;</strong> - Elementning tashqi qismidagi
+                  bo‘shliq (boshqa elementlardan uzoqlashish) <br />
+
+                  <strong>border: 1px solid black;</strong> - Element atrofiga
+                  chegara (chiziq) chizish <br />
+
+                  <strong>border-radius: 10px;</strong> - Element burchaklarini
+                  yumaloq qilish <br />
+
+                  <strong>box-sizing: border-box;</strong> - Padding va border
+                  o‘lchamlarini elementning umumiy kengligiga kiritish <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Orqa fon (Background) Elementning orqa qismini bezash uchun.
+              </h3>
+              <div>
+                <p>
+                  <strong>background-color: yellow;</strong> - Elementning orqa
+                  fon rangini belgilash <br />
+
+                  <strong>background-image: url('rasm.jpg');</strong> - Orqa
+                  fonga rasm joylashtirish <br />
+
+                  <strong>background-size: cover;</strong> - Orqa fondagi
+                  rasmning o‘lchamini moslashtirish <br />
+
+                  <strong>background-repeat: no-repeat;</strong> - Orqa fondagi
+                  rasm takrorlanishini to‘xtatish <br />
+
+                  <strong>background-position: center;</strong> - Orqa fondagi
+                  rasmning o‘rnini belgilash <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Joylashuv va Ko‘rinish (Positioning & Display) Elementlarni
+                sahifaning qayerida va qanday tartibda turishini boshqarish.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>display: block;</strong> - Elementni blok ko‘rinishiga
+                  o‘tkazish <br />
+
+                  <strong>display: inline-block;</strong> - Elementni
+                  qatorli-blok ko‘rinishiga o‘tkazish <br />
+
+                  <strong>display: flex;</strong> - Moslashuvchan (Flexbox)
+                  konteyner yaratish <br />
+
+                  <strong>display: none;</strong> - Elementni sahifadan butunlay
+                  yashirish <br />
+
+                  <strong>position: absolute;</strong> - Elementni erkin
+                  (absalyut) joylashtirish <br />
+
+                  <strong>position: fixed;</strong> - Elementni ekranga
+                  yopashtirib qo‘yish (skroll qilinganda ham joyida turadi)
+                  <br />
+                  <strong>z-index: 10;</strong> - Elementlarning ustma-ustlik
+                  qatlamini belgilash <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Effektlar va Animatsiyalar Sahifaga interaktivlik va go‘zallik
+                qo‘shish uchun.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>opacity: 0.5;</strong> - Elementning shaffofligini
+                  belgilash
+                  <br />
+                  <strong>box-shadow: 5px 5px 10px grey;</strong> - Elementga
+                  soya berish
+                  <br />
+                  <strong>cursor: pointer;</strong> - Sichqoncha ustiga kelganda
+                  ko‘rinishini o‘zgartirish
+                  <br />
+                  <strong>transition: 0.3s;</strong> - O‘zgarishlar (masalan
+                  rang o‘zgarishi) silliq sodir bo‘lishi uchun vaqt belgilash
+                  <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Flexbox (Moslashuvchan joylashuv) Elementlarni bir qator yoki
+                bir ustun bo'yicha oson joylashtirish uchun ishlatiladi.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>display: flex;</strong> - Flexbox konteynerini
+                  faollashtirish <br />
+
+                  <strong>flex-direction: row | column;</strong> - Elementlar
+                  yo'nalishini belgilash (qator yoki ustun) <br />
+
+                  <strong>justify-content: center;</strong> - Elementlarni
+                  asosiy o'q bo'ylab tekislash (center, space-between,
+                  space-around) <br />
+
+                  <strong>align-items: center;</strong> - Elementlarni yordamchi
+                  o'q bo'ylab (vertikal) tekislash <br />
+
+                  <strong>flex-wrap: wrap;</strong> - Elementlar sig'masa,
+                  keyingi qatorga o'tkazish <br />
+
+                  <strong>gap: 10px;</strong> - Flex-elementlar orasidagi
+                  masofani belgilash <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                CSS Grid (To'rsimon joylashuv) Murakkab, ko'p ustunli va qatorli
+                dizaynlarni yaratish uchun eng kuchli vosita. <br />
+              </h3>
+
+              <div>
+                <p>
+                  <strong>display: grid;</strong> - Grid konteynerini
+                  faollashtirish <br />
+
+                  <strong>grid-template-columns: 1fr 1fr 1fr;</strong> -
+                  Ustunlar soni va o'lchamini belgilash (masalan, 3 ta teng
+                  ustun) <br />
+
+                  <strong>grid-template-rows: auto;</strong> - Qatorlar
+                  balandligini belgilash <br />
+
+                  <strong>grid-column: 1 / 3;</strong> - Elementning nechanchi
+                  ustundan nechanchigacha cho'zilishini belgilash <br />
+
+                  <strong>grid-area: header;</strong> - Elementga Grid hududi
+                  nomi berish <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Media Queries (Moslashuvchanlik - Responsiveness) Veb-sahifani
+                telefon, planshet va kompyuter ekranlariga moslashtirish uchun.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>@media (max-width: 768px) { ... }</strong> - Ekran
+                  kengligi 768px dan kichik bo'lganda ishlaydigan kodlar <br />
+
+                  <strong>@media (min-width: 1024px) { ... }</strong> - Ekran
+                  kengligi 1024px dan katta bo'lganda ishlaydigan kodlar <br />
+
+                  <strong>orientation: landscape;</strong> - Qurilma gorizontal
+                  holatda bo'lgandagi uslublar <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                Filtrlar va Shakllar Rasmlar va elementlarga grafik effektlar
+                berish uchun.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>filter: blur(5px);</strong> - Elementni xiralashtirish
+                  <br />
+
+                  <strong>filter: grayscale(100%);</strong> - Elementni oq-qora
+                  rangga o'tkazish <br />
+
+                  <strong>clip-path: circle(50%);</strong> - Elementni ma'lum
+                  bir shaklda qirqib olish <br />
+
+                  <strong>overflow: hidden;</strong> - Element chegarasidan
+                  chiqib ketgan qismlarni yashirish <br />
+                </p>
+              </div>
+            </li>
+            <li>
+              <h3>
+                O'zgaruvchilar (CSS Variables) Kodni toza va oson
+                tahrirlanadigan qilish uchun.
+              </h3>
+
+              <div>
+                <p>
+                  <strong>--main-color: #3498db;</strong> - Maxsus o'zgaruvchi
+                  yaratish <br>
+
+                  <strong>color: var(--main-color);</strong> - O'zgaruvchidan
+                  foydalanish <br>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

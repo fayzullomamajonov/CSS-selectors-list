@@ -1,37 +1,150 @@
-section {
-    max-width: 80%;
-    border: 1px solid #A6A09B;
-    /* background-color: #edebe9; */
-    background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
-    margin-left: 10%;
-    margin-bottom: 20px;
+.savodxon-it-logo{
+    height: 60px;
+    width: 80px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0px 8px 15px rgba(8, 81, 87, 0.8);
+    backdrop-filter: blur(10px);
+    background-color: #085157;
+
+}
+.navbar-list{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+.navbar-list li a{
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), text-shadow 0.3s ease;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
 }
 
+.navbar-list li a:hover{
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+    color: #ffffff;
+    transform: scale(1.0) translateY(-3px); 
+}
 
-h1 {
-    font-family:'Times New Roman', serif;
+.navbar-item{
+    display: grid;
+    margin-right: 25px;
     text-align: center;
-    font-size: 64px;
-    color: orange;
+    font-family: 'Inter', sans-serif;   
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    
 }
 
-li {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 120%;
-    color: #fff;
-
+.nav-right {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    /* Elementlar o'ngga yopishib turishi uchun */
+    justify-content: flex-end; 
+    height: 60px;
 }
 
-h3{
-    color: #fff;
+.search-box {
+    display: flex;
+    flex-direction: row-reverse; /* Elementlarni teskari tartibda (Ikonka o'ngda, input chapda) joylashtiradi */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 25px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease;
+    /* O'ng tomonni qotirish uchun */
+    margin-left: auto; 
 }
 
-p {
-    font-family: 'Times New Roman', Times, serif;
-   
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 5px; /* Paddingni nolga tushirdik */
+    width: 120px;
+    transition: width 0.4s ease;
+    text-align: left; /* Yozuv chapdan boshlanadi */
 }
-strong {
-    font-size: 24px;
-    color: orange;
+
+.search-box input:focus {
+    width: 250px; /* Kengayish faqat chap tomondagi bo'shliq hisobiga bo'ladi */
+}
+
+.search-box i {
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px; /* Input va ikonka orasidagi masofa */
+    margin-right: 0;   /* O'ng tomonda masofa shart emas */
+}
+
+/* Tugmalarni himoyalash */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0; /* Qidiruv oynasi bularni aslo siqa olmaydi */
+}
+.login-link {
+    flex-shrink: 0;
+  display: inline-block; /* Muhim! Transform ishlashi uchun */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.login-link:hover {
+    flex-shrink: 0;
+  transform: scale(1.1) translateY(-3px);
+  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+  color: #12B5BD; 
+}
+
+.signup-btn {
+white-space: nowrap; /* Yozuv bir qatorda turishini ta'minlaydi */
+  flex-shrink: 0;
+  background-color: #12B5BD;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.signup-btn:hover {
+  background-color: white;
+  color: #085157;
+  transform: translateY(-2px);
+}
+
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Tugmalar va 'yoki' so'zi orasidagi masofa */
+}
+
+.auth-buttons em {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  font-size: 14px;
 }
